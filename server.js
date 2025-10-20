@@ -46,5 +46,16 @@ app.get("/api/instagram", async (req, res) => {
   }
 });
 
+app.get("/api/download", async (req, res) => {
+  const { url } = req.query;
+  try {
+    const response = await fetch(`https://nayan-video-downloader.vercel.app/alldown?url=${encodeURIComponent(url)}`);
+    const data = await response.json();
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch data" });
+  }
+});
+
 
 module.exports = app;
