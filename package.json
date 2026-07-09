@@ -18,10 +18,13 @@
   "author": "Piyush Manna",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "express-rate-limit": "^8.1.0",
-    "helmet": "^8.1.0"
+     "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "helmet": "^7.1.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
